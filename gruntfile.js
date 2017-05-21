@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 /**
  * Created by msackeli on 5/21/2017.
  */
+=======
+>>>>>>> 9a3c1a75ec1aa30dd23bada8d26219d35d1239c6
 // gruntfile.js
 
 module.exports = function(grunt) {
@@ -11,7 +14,11 @@ module.exports = function(grunt) {
         less: {
             development: {
                 files: {
+<<<<<<< HEAD
                     'src/css/main.css': 'less/main.less'
+=======
+                    'src/css/main.css': 'src/less/main.less'
+>>>>>>> 9a3c1a75ec1aa30dd23bada8d26219d35d1239c6
                 },
                 options: {
                     plugins: [
@@ -24,7 +31,11 @@ module.exports = function(grunt) {
 
         watch: {
             less: {
+<<<<<<< HEAD
                 files: ['less/**'],
+=======
+                files: ['src/less/**'],
+>>>>>>> 9a3c1a75ec1aa30dd23bada8d26219d35d1239c6
                 tasks: ['less']
             }
         }

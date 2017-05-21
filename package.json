@@ -55,9 +55,15 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+<<<<<<< HEAD
     "test": "node scripts/test.js --env=jsdom",
     "compile-less": "grunt compile-less",
     "watch-less": "grunt watch"
+=======
+    "compile-less": "grunt compile-less",
+    "watch-less": "grunt watch",
+    "test": "node scripts/test.js --env=jsdom"
+>>>>>>> 9a3c1a75ec1aa30dd23bada8d26219d35d1239c6
   },
   "jest": {
     "collectCoverageFrom": [
