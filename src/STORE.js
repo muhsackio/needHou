@@ -6,10 +6,12 @@ const STORE = _.extend(Backbone.Events, {
 	_data: {
 		info: {
 			gender: "none",
-			age: 0,
+			age: "0",
 			location: 0,
 			enteredInfo: false
-		}
+		},
+
+		placeholderHash: ""
 	}, 
 
 	_emitChange: function() {

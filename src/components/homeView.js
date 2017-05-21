@@ -40,18 +40,18 @@ const Categories = React.createClass({
 const ResourceList = React.createClass({
 		render: function() {
 		return (
-        <div className="container">
-            <div className="row">
-                <h1 className="col-xs-12 text-center">
-                Houston Displaced Help
-            </h1>
-            </div>
-            <div className="row">
-                <Categories />
-            </div>
-        </div>       
-    );
-
+			<div className="resources">
+    <a className="resourceButton" href="#shelters">Shelter</a>
+    <a className="resourceButton" href="#facilities"> Facilities</a>
+    <a className="resourceButton" href="#food"> Food</a>
+    <a className="resourceButton" href="#everdayThings"> Everyday Things</a>
+    <a className="resourceButton" href="#health"> Health</a>
+    <a className="resourceButton" href="#jobCounseling"> Job Counseling</a>
+    <a className="resourceButton" href="#moneyHelp"> Money Help</a>
+    <a className="resourceButton" href="#legal"> Legal</a>
+    <a className="resourceButton" href="#support"> Support & Counseling</a>
+  </div>
+  		)
 	}
 })
 

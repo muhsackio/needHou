@@ -1,4 +1,4 @@
-import STORE from './store'
+import STORE from './STORE'
 
 
 const ACTIONS = {
@@ -15,6 +15,19 @@ const ACTIONS = {
 			})
 		} ,
 
+		checkInfoStatus: function(hashPlaceHolder) {
+			if(STORE._get('info').enteredInfo) {
+				return 
+			}
+			else {
+				STORE._set({
+					placeholderHash: hashPlaceHolder
+				})
+				document.location.hash = "#enterInfo"
+
+			}
+
+		}
 		
 }
 
