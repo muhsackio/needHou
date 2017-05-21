@@ -4,6 +4,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Backbone from 'backbone'
 import './index.css';
 import HomeView from './components/homeView.js'
+import './css/main.css';
 
 
 
