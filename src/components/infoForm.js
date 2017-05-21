@@ -5,13 +5,14 @@ import STORE from '../STORE.js';
 
 var InfoForm = React.createClass({
 
-	/*
+	
 	componentWillMount: function() {
 		STORE.on('storeChanged', ()=>{
 			this.setState(
 				STORE._getData()
 			)
 		})
+		console.log(this.state)
 	},
 
 	componentWillUnmount: function() {
@@ -24,26 +25,57 @@ var InfoForm = React.createClass({
 	},
 
 	handleChange: function(event) {
+		debugger
 		STORE._set({
-			info: event.target.value;
+			info: event.target.value
 		})
+	},
+
+	handleAgeChange: function(event) {
+		
+		STORE._set({
+			info: {...STORE._get('info'),
+				age: event.target.value	
+			}
+		})
+
+		console.log(STORE._getData())
+	},
+
+	handleGenderChange: function(event) {
+		
+		STORE._set({
+			info: {...STORE._get('info'),
+				gender: event.target.value	
+			}
+		})
+
+		console.log(STORE._getData())
 	},
 
 	handleSubmit: function(event){
 		event.preventDefault();
-		console.log(event)
+		
+		STORE._set({
+			info: {...STORE._get('info'),
+				enteredInfo: true
+			}
+		})
+
+		
+		
 
 	},
-	*/
+	
 
 	render: function() {
 
 		return (
-			<div> butts </div>
-		/*<form onSubmit={this.handleSubmit}>
+			
+		<form onSubmit={this.handleSubmit}>
         <label>
           Gender identity 
-          <select value={this.state.info.gender} onChange={this.handleChange}>
+          <select value={this.state.info.gender} onChange={this.handleGenderChange}>
             <option value="Female">Female</option>
             <option value="Male">Male</option>
             <option value="Other">Other</option>
@@ -51,7 +83,7 @@ var InfoForm = React.createClass({
         </label>
         <label>
           Age
-          <select value={this.state.info.age} onChange={this.handleChange}>
+          <select value={this.state.info.age} onChange={this.handleAgeChange}>
             <option value="0 to 5">0 to 5</option>
             <option value="6 to 12">6 to 13</option>
             <option value="13 to 18">13 to 18</option>
@@ -65,7 +97,7 @@ var InfoForm = React.createClass({
         </label>
         <input type="submit" value="Submit" />
       </form>
-      */
+      
       )
 
 	}

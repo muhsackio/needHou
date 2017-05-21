@@ -22,15 +22,15 @@ const ResourceList = React.createClass({
 		render: function() {
 		return (
 			<div className="resources">
-    <a className="resourceButton" href="#1">Shelter</a>
-    <a className="resourceButton" href="#1"> Facilities</a>
-    <a className="resourceButton" href="#1"> Food</a>
-    <a className="resourceButton" href="#1"> Everyday Things</a>
-    <a className="resourceButton" href="#1"> Health</a>
-    <a className="resourceButton" href="#1"> Job Counseling</a>
-    <a className="resourceButton" href="#1"> Money Help</a>
-    <a className="resourceButton" href="#1"> Legal</a>
-    <a className="resourceButton" href="#1"> Support & Counseling</a>
+    <a className="resourceButton" href="#shelter">Shelter</a>
+    <a className="resourceButton" href="#facilities"> Facilities</a>
+    <a className="resourceButton" href="#food"> Food</a>
+    <a className="resourceButton" href="#everdayThings"> Everyday Things</a>
+    <a className="resourceButton" href="#health"> Health</a>
+    <a className="resourceButton" href="#jobCounseling"> Job Counseling</a>
+    <a className="resourceButton" href="#moneyHelp"> Money Help</a>
+    <a className="resourceButton" href="#legal"> Legal</a>
+    <a className="resourceButton" href="#support"> Support & Counseling</a>
   </div>
   		)
 

@@ -1,4 +1,4 @@
-import STORE from './store'
+import STORE from './STORE'
 
 
 const ACTIONS = {
@@ -16,7 +16,7 @@ const ACTIONS = {
 		} ,
 
 		checkInfoStatus: function() {
-			return STORE._get(info).enteredInfo
+			return STORE._get('info').enteredInfo
 
 		}
 		
