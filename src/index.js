@@ -5,7 +5,11 @@ import Backbone from 'backbone'
 import './index.css';
 import HomeView from './components/homeView';
 import InfoForm from './components/infoForm';
+<<<<<<< Updated upstream
 import ShelterView from './components/shelterView';
+=======
+import './css/main.css';
+>>>>>>> Stashed changes
 
 
 
