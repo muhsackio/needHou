@@ -25,7 +25,7 @@ var InfoForm = React.createClass({
 	},
 
 	handleChange: function(event) {
-		debugger
+		
 		STORE._set({
 			info: event.target.value
 		})
@@ -61,8 +61,8 @@ var InfoForm = React.createClass({
 				enteredInfo: true
 			}
 		})
+		document.location.hash = STORE._get('placeholderHash')
 
-		
 		
 
 	},

@@ -22,7 +22,7 @@ const ResourceList = React.createClass({
 		render: function() {
 		return (
 			<div className="resources">
-    <a className="resourceButton" href="#shelter">Shelter</a>
+    <a className="resourceButton" href="#shelters">Shelter</a>
     <a className="resourceButton" href="#facilities"> Facilities</a>
     <a className="resourceButton" href="#food"> Food</a>
     <a className="resourceButton" href="#everdayThings"> Everyday Things</a>

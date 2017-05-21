@@ -11,7 +11,7 @@ const STORE = _.extend(Backbone.Events, {
 			enteredInfo: false
 		},
 
-		placeToGo: ""
+		placeholderHash: ""
 	}, 
 
 	_emitChange: function() {

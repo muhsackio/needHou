@@ -5,6 +5,7 @@ import Backbone from 'backbone'
 import './index.css';
 import HomeView from './components/homeView';
 import InfoForm from './components/infoForm';
+import ShelterView from './components/shelterView';
 
 
 
@@ -16,6 +17,7 @@ const app = function() {
 		routes: {
 			"home": "handleHome",
 			"enterInfo": "handleInfo",
+			"shelters": "handleShelters",
 			"*default": "handleDefault"
 		},
 
@@ -26,7 +28,11 @@ const app = function() {
 		handleInfo: function() {
 			ReactDOM.render(<InfoForm />, document.querySelector('#root'));
 		},
-		
+
+		handleShelters: function() {
+			ReactDOM.render(<ShelterView />, document.querySelector('#root'));
+		},
+
 		handleDefault: function(){
 			document.location.hash = '#home'
 		},

@@ -15,8 +15,17 @@ const ACTIONS = {
 			})
 		} ,
 
-		checkInfoStatus: function() {
-			return STORE._get('info').enteredInfo
+		checkInfoStatus: function(hashPlaceHolder) {
+			if(STORE._get('info').enteredInfo) {
+				return 
+			}
+			else {
+				STORE._set({
+					placeholderHash: hashPlaceHolder
+				})
+				document.location.hash = "#enterInfo"
+
+			}
 
 		}
 		
