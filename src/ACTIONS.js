@@ -15,6 +15,10 @@ const ACTIONS = {
 			})
 		} ,
 
+		checkInfoStatus: function() {
+			return STORE._get(info).enteredInfo
+
+		}
 		
 }
 
